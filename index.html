@@ -11,22 +11,43 @@
       width: 100%;
       font-family: Arial, sans-serif;
       background: #eef1f5;
-      overflow: hidden; /* Prevents double scrollbars */
+      overflow: hidden; /* Keeps the app feeling like a single unit */
     }
 
     .header {
       height: 50px;
-      line-height: 50px; /* Centers text vertically */
+      line-height: 50px;
       background: #0f172a;
       color: white;
       text-align: center;
       font-size: 18px;
     }
 
+    /* Styles for the new Edit Bar */
+    .mobile-edit-bar {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 60px; /* Specific height for the button area */
+      background: #f8fafc;
+      border-bottom: 1px solid #cbd5e1;
+    }
+
+    .edit-button {
+      background-color: #10b981;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 14px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
     .container {
       width: 100%;
-      /* Adjust height to account for the 50px header */
-      height: calc(100vh - 50px); 
+      /* Subtracts the Header (50px) and the Edit Bar (60px) */
+      height: calc(100vh - 110px); 
     }
 
     iframe {
@@ -43,9 +64,17 @@
     Craftmen Business URBC
   </div>
 
+  <div class="mobile-edit-bar">
+    <a href="https://docs.google.com/spreadsheets/d/1Rsds8xn9hLhrWEudnlnkSLAsAW8LG-ztwx_O3O6JdPY/edit" 
+       target="_blank" 
+       class="edit-button">
+       Tap to Edit Sheet
+    </a>
+  </div>
+
   <div class="container">
     <iframe 
-      src="https://docs.google.com/spreadsheets/d/1Rsds8xn9hLhrWEudnlnkSLAsAW8LG-ztwx_O3O6JdPY/edit?embedded=true&chrome=false&view=desktop"
+      src="https://docs.google.com/spreadsheets/d/1Rsds8xn9hLhrWEudnlnkSLAsAW8LG-ztwx_O3O6JdPY/edit?rm=minimal"
       allowfullscreen>
     </iframe>
   </div>
