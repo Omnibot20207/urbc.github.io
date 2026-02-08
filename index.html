@@ -1,16 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Craftmen Business URBC</title>
   <style>
-    body {
+    body, html {
       margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
       font-family: Arial, sans-serif;
       background: #eef1f5;
+      overflow: hidden; /* Prevents double scrollbars */
     }
 
     .header {
-      padding: 15px;
+      height: 50px;
+      line-height: 50px; /* Centers text vertically */
       background: #0f172a;
       color: white;
       text-align: center;
@@ -19,7 +25,8 @@
 
     .container {
       width: 100%;
-      height: calc(100vh - 60px);
+      /* Adjust height to account for the 50px header */
+      height: calc(100vh - 50px); 
     }
 
     iframe {
@@ -33,12 +40,12 @@
 <body>
 
   <div class="header">
-    
+    Craftmen Business URBC
   </div>
 
   <div class="container">
     <iframe 
-      src="https://docs.google.com/spreadsheets/d/1Rsds8xn9hLhrWEudnlnkSLAsAW8LG-ztwx_O3O6JdPY/edit?usp=sharing"
+      src="https://docs.google.com/spreadsheets/d/1Rsds8xn9hLhrWEudnlnkSLAsAW8LG-ztwx_O3O6JdPY/edit?rm=minimal"
       allowfullscreen>
     </iframe>
   </div>
